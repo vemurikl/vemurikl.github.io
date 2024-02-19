@@ -12,41 +12,155 @@
   </script>
   <!-- Theme Made By www.w3schools.com -->
   <title>Krishithanjali Vemuri - Profile</title>
-  <img src=""C:\Users\dwara\Pictures\Camera Roll\WIN_20240203_03_23_57_Pro.jpg"" alt="Example Image">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <!DOCTYPE html>
-<html lang="en">
-<head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-935NWT5N7N"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-935NWT5N7N');
-  </script>
-  <!-- Theme Made By www.w3schools.com -->
-  <title>Krishithanjali Vemuri - Profile</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="styles.css"> <!-- Include your external CSS file -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
   <!-- External clock.js script -->
   <script src="https://waph-uc.github.io/clock.js"></script>
-
-  <!-- External clock.js script -->
-  <script src="https://waph-uc.github.io/clock.js"></script>
+  <!-- Include jQuery Cookie Plugin -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/3.0.1/js.cookie.min.js"></script>
   <style>
+    /* Add your custom styles here */
+
+    body {
+      font-family: 'Lato', sans-serif;
+      background-color: #f8f8f8;
+    }
+
     #digit-clock, #analog-clock, #date {
       text-align: center;
-      margin-top: 20px;}
+      margin-top: 20px;
+    }
+
+    .navbar {
+      margin-bottom: 0;
+      background-color: #f8f8f8;
+      z-index: 9999;
+      border: 0;
+      font-size: 12px !important;
+      line-height: 1.42857143 !important;
+      letter-spacing: 4px;
+      border-radius: 0;
+    }
+
+    .navbar li a, .navbar .navbar-brand {
+      color: #777;
+    }
+
+    .navbar-nav li a:hover, .navbar-nav li.active a {
+      color: #1abc9c !important;
+      background-color: #fff !important;
+    }
+
+    .navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: #777 !important;
+    }
+
+    .jumbotron {
+      background-image: url(''); 
+      background-size: cover;
+      color: white;
+      text-shadow: 2px 2px 4px #000000;
+    }
+
+    .jumbotron h1, .jumbotron p {
+      color: #fff;
+    }
+
+    .container-fluid {
+      padding: 60px 50px;
+    }
+
+    .bg-grey {
+      background-color: #f6f6f6;
+    }
+
+    .navbar-toggle {
+      background-color: #1abc9c;
+    }
+
+    footer {
+      background-color: #f8f8f8;
+      padding: 25px;
+    }
+
+    footer a {
+      color: #777;
+    }
+
+    footer a:hover {
+      color: #1abc9c;
+    }
+
+    .slideanim {visibility:hidden;}
+    .slide {
+      animation-name: slide;
+      -webkit-animation-name: slide;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      visibility: visible;
+    }
+
+    @keyframes slide {
+      0% {
+        opacity: 0;
+        transform: translateY(70%);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0%);
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      .col-sm-8 {
+        text-align: center;
+        margin: 25px 0;
+      }
+    }
+
+    /* Custom background colors for sections */
+    #objective {
+      background-color: #e2efff; /* Light blue */
+    }
+
+    #education {
+      background-color: #fff7e6; /* Light yellow */
+    }
+
+    #skills {
+      background-color: #e6ffe6; /* Light green */
+    }
+
+    #expertise {
+      background-color: #f5f5f5; /* Light grey */
+    }
+
+    #contact {
+      background-color: #ffe6e6; /* Light red */
+    }
+   .weather-card {
+      border: 1px solid #ccc;
+      padding: 20px;
+      margin-bottom: 20px;
+      background-color: #f9fde6;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    }
+
+    .joke-of-the-day {
+      border: 1px solid #ccc;
+      padding: 20px;
+      margin-bottom: 20px;
+      background-color: ;#e6f7fc
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    }
   </style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
@@ -75,10 +189,70 @@
 </nav>
 
 <div class="jumbotron text-center">
-  <h1>Krishithanjali Vemuri</h1> 
+<div class="col-sm-4">
+      <img src="anjali.jpeg" alt="Headshot" style="max-width: 300px; height: 200px; border-radius: 10px;">
+</div>  
+<h1>Krishithanjali Vemuri</h1> 
   <p>Data Science Enthusiast | IT Professional</p> 
   <p>Passionate about analytics, machine learning, and human-computer interaction.</p>
 </div>
+
+<!-- JavaScript and other HTML content here -->
+
+</body>
+</html>
+
+<script>
+  // Function to set a cookie with a given name, value, and expiration date
+  function setCookie(name, value, days) {
+    var expires = "";
+    if (days) {
+      var date = new Date();
+      date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+      expires = "; expires=" + date.toUTCString();
+    }
+    document.cookie = name + "=" + (value || "") + expires + "; path=/";
+  }
+
+  // Function to get the value of a cookie by name
+  function getCookie(name) {
+    var nameEQ = name + "=";
+    var ca = document.cookie.split(';');
+    for (var i = 0; i < ca.length; i++) {
+      var c = ca[i];
+      while (c.charAt(0) == ' ') {
+        c = c.substring(1, c.length);
+      }
+      if (c.indexOf(nameEQ) == 0) {
+        return c.substring(nameEQ.length, c.length);
+      }
+    }
+    return null;
+  }
+
+  // Function to display a welcome message based on whether the user is returning or new
+  function checkCookie() {
+    var lastVisit = getCookie("lastvisit");
+    var message = document.getElementById('welcome-message'); // Targeting the specific <div> by its id
+    if (lastVisit !== "") {
+      message.className += " alert-info";
+      message.innerHTML = "Welcome back! You have last Visited On 02/19/24";
+    } else {
+      message.className += " alert-success";
+      message.innerHTML = "Welcome to my homepage!";
+    }
+    // Set a cookie for the current visit
+    setCookie("lastvisit", new Date().toLocaleString(), 365);
+  }
+
+  // Call checkCookie() when the page loads
+  window.onload = checkCookie;
+</script>
+
+
+
+<div id="welcome-message"></div>
+
 
 <!-- Container (Career Objective Section) -->
 <div id="objective" class="container-fluid">
@@ -89,29 +263,6 @@
     </div>
   </div>
 </div>
-<div id="digit-clock"></div>
-
-  <!-- Analog Clock -->
-  <canvas id="analog-clock" width="150" height="150" style="background-color:#999"></canvas>
- <script src="https://waph-uc.github.io/clock.js"></script>
-
-  <!-- Date Display -->
-  <div id="date">Click here to show Date()</div>
-
-  <!-- Your existing content -->
-
-  <script type="text/javascript">
-    function displayTime() {
-      $('#digit-clock').html("Current time: " + new Date());
-    }
-    
-    setInterval(displayTime, 500);
-
-    // Click event for Date Display
-    $('#date').on('click', function() {
-      $(this).html(new Date());
-    });
-  </script>
 
 <!-- Container (Education Section) -->
 <div id="education" class="container-fluid bg-grey">
@@ -128,20 +279,7 @@
   </div>
 </div>
 
-<!-- Container (Projects Section) -->
-<div id="projects" class="container-fluid">
-  <div class="row">
-    <div class="col-sm-8 col-sm-offset-2">
-      <h2>Projects</h2>
-      <h4>Evaluation Of Data Analytical Tools</h4>
-      <p>Studied and tested popular data tools like Excel, Tableau, Power BI, and ApacheSpark. Made charts showing what each tool can do well versus not as well. Looked at how easy they are to use, if they work with large amounts of data, and how they work together. Wrote a report of findings to help company executives pick the best data tools for different needs in the business.</p>
-      <h4>Prediction Of Hand Gestures for Impaired Persons using OpenCV Approach</h4>
-      <p>Developed hand gesture recognition system using OpenCV and deep learning. Classified hand gestures through modeling and algorithm optimization. Enables natural, user-friendly communication interface for hearing impaired. Demonstrates the potential of computer vision and ML for assistive technology.</p>
-      <h4>AWS Cloud Virtual Internship</h4>
-      <p>Completed AWS Cloud virtual internship providing hands-on experience with cloud computing services including EC2, S3, and Lambda. Gained practical experience with cloud architecture, security, and deployment through project-based learning modules on AWS platform.</p>
-    </div>
-  </div>
-</div>
+
 
 <!-- Container (Skills Section) -->
 <div id="skills" class="container-fluid bg-grey">
@@ -157,6 +295,8 @@
     </div>
   </div>
 </div>
+
+<a href="projects.html">Course Overview & Projects</a>
 
 <!-- Container (Expertise Section) -->
 <div id="expertise" class="container-fluid">
@@ -177,17 +317,13 @@
       <p>Feel free to reach out to me if you have any questions or would like to discuss potential opportunities.</p>
       <p><span class="glyphicon glyphicon-map-marker"></span> 525 Lowell Avenue #4, Cincinnati, Ohio</p>
       <p><span class="glyphicon glyphicon-phone"></span> +1 513-430-6239</p>
-      <p><span class="glyphicon glyphicon-envelope"></span> vemurikl@mail.uc.edu</p>
+      <!-- Add an ID to the email paragraph for toggling -->
+      <p id="email"><span class="glyphicon glyphicon-envelope"></span> vemurikl@mail.uc.edu</p>
+      <!-- Add a button to toggle email visibility -->
+      <button id="toggle-email" class="btn btn-default">Toggle Email</button>
     </div>
   </div>
 </div>
-
-<footer class="container-fluid text-center">
-  <a href="#myPage" title="To Top">
-    <span class="glyphicon glyphicon-chevron-up"></span>
-  </a>
-  <p>Bootstrap Theme Made By <a href="https://www.w3schools.com" title="Visit w3schools">www.w3schools.com</a></p>
-</footer>
 
 <script>
   $(document).ready(function(){
@@ -219,9 +355,191 @@
         }
       });
     });
-  })
+
+    // Display digital clock
+    function displayTime() {
+      $('#digit-clock').html("Current time: " + new Date());
+    }
+    setInterval(displayTime, 500);
+
+    // Click event for Date Display
+    $('#date').on('click', function() {
+      $(this).html(new Date());
+    });
+
+    // Functionality to toggle email visibility
+    $('#toggle-email').on('click', function() {
+      $('#email').toggle();
+    });
+
+    
+
+    
+  });
 </script>
+<!-- Digital Clock -->
+<div id="digit-clock"></div>
+
+<canvas id="analog-clock" width="150" height="150" style="background-color:#999"></canvas>
+
+<script>
+    var canvas = document.getElementById("analog-clock");
+    var ctx = canvas.getContext("2d");
+    var radius = canvas.height / 2;
+    ctx.translate(radius, radius);
+    radius = radius * 0.90;
+    setInterval(drawClock, 1000);
+
+    function drawClock() {
+        drawFace(ctx, radius);
+        drawNumbers(ctx, radius);
+        drawTime(ctx, radius);
+    }
+
+    function drawFace(ctx, radius) {
+        var grad;
+        ctx.beginPath();
+        ctx.arc(0, 0, radius, 0, 2 * Math.PI);
+        ctx.fillStyle = '#f0f0f0'; // Change background color here
+        ctx.fill();
+        grad = ctx.createRadialGradient(0, 0, radius * 0.95, 0, 0, radius * 1.05);
+        grad.addColorStop(0, '#333');
+        grad.addColorStop(0.5, 'white');
+        grad.addColorStop(1, '#333');
+        ctx.strokeStyle = grad;
+        ctx.lineWidth = radius * 0.1;
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.arc(0, 0, radius * 0.1, 0, 2 * Math.PI);
+        ctx.fillStyle = '#333'; // Change clock center color here
+        ctx.fill();
+    }
+
+    function drawNumbers(ctx, radius) {
+        var ang;
+        var num;
+        ctx.font = radius * 0.15 + "px arial";
+        ctx.textBaseline = "middle";
+        ctx.textAlign = "center";
+        for (num = 1; num < 13; num++) {
+            ang = num * Math.PI / 6;
+            ctx.rotate(ang);
+            ctx.translate(0, -radius * 0.85);
+            ctx.rotate(-ang);
+            ctx.fillText(num.toString(), 0, 0);
+            ctx.rotate(ang);
+            ctx.translate(0, radius * 0.85);
+            ctx.rotate(-ang);
+        }
+    }
+
+    function drawTime(ctx, radius) {
+        var now = new Date();
+        var hour = now.getHours();
+        var minute = now.getMinutes();
+        var second = now.getSeconds();
+        // Hour
+        hour = hour % 12;
+        hour = (hour * Math.PI / 6) +
+            (minute * Math.PI / (6 * 60)) +
+            (second * Math.PI / (360 * 60));
+        drawHand(ctx, hour, radius * 0.5, radius * 0.07);
+        // Minute
+        minute = (minute * Math.PI / 30) + (second * Math.PI / (30 * 60));
+        drawHand(ctx, minute, radius * 0.8, radius * 0.07);
+        // Second
+        second = (second * Math.PI / 30);
+        drawHand(ctx, second, radius * 0.9, radius * 0.02, '#f00'); // Change second hand color here
+    }
+
+    function drawHand(ctx, pos, length, width, color = '#000') {
+        ctx.beginPath();
+        ctx.strokeStyle = color;
+        ctx.lineWidth = width;
+        ctx.lineCap = "round";
+        ctx.moveTo(0, 0);
+        ctx.rotate(pos);
+        ctx.lineTo(0, -length);
+        ctx.stroke();
+        ctx.rotate(-pos);
+    }
+</script>
+<!-- Date Display -->
+<div id="date">Click here to show Date()</div>
+
+<div id="response">
+    <script type="text/javascript">
+        // Integration with the jokeAPI to fetch a programming joke
+        $.get("https://v2.jokeapi.dev/joke/Any", function(result) {
+            console.log("From jokeAPI: " + JSON.stringify(result));
+            $("#response").html("Joke Of the Day : " + result.joke);
+        });
+    
+        // Function to fetch a new joke every minute
+        setInterval(function() {
+            $.get("https://v2.jokeapi.dev/joke/Any", function(result) {
+                console.log("From jokeAPI: " + JSON.stringify(result));
+                $("#response").html("Joke of the Day : " + result.joke);
+            });
+        }, 60000); // 60000 milliseconds = 1 minute
+    </script>
+</div>
+
+<div class="container">
+  <h1>Weather Viewer</h1>
+  <div class="weather-card" id="weather-card">
+  </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+  $(document).ready(function() {
+    // Your OpenWeatherMap API key
+    var apiKey = '5ee6869bb73642ecad9d932b34855e5d'; // Replace with your own API key
+
+    // City to fetch weather data for
+    var city = 'New York'; // Change this to the desired city
+
+    // API URL
+     var apiUrl = `https://api.weatherbit.io/v2.0/current?lat=35.7796&lon=-78.6382&key=5ee6869bb73642ecad9d932b34855e5d`
+
+    // Fetch weather data
+    $.ajax({
+      url: apiUrl,
+      method: 'GET',
+      success: function(response) {
+        // Display weather data on the page
+        var weatherIconUrl =  `https://www.weatherbit.io/static/img/icons/` + response.data[0].weather.icon + `.png`;
+        var weatherDescription = response.data[0].weather.description;
+        var temperature = response.data[0].temp;
+        var humidity = response.data[0].temp;
+        var windSpeed = response.data[0].wind_spd;
+
+        var weatherHtml = '<h2>' + city + '</h2>';
+        weatherHtml += '<img class="weather-icon" src="' + weatherIconUrl + '" alt="' + weatherDescription + '">';
+        weatherHtml += '<div class="weather-details">';
+        weatherHtml += '<p><strong>Description:</strong> ' + weatherDescription + '</p>';
+        weatherHtml += '<p><strong>Temperature:</strong> ' + temperature + ' K</p>'; // Temperature in Kelvin
+        weatherHtml += '<p><strong>Humidity:</strong> ' + humidity + '%</p>';
+        weatherHtml += '<p><strong>Wind Speed:</strong> ' + windSpeed + ' m/s</p>';
+        weatherHtml += '</div>';
+
+        $('#weather-card').html(weatherHtml);
+      },
+      error: function(xhr, status, error) {
+        console.error(status, error);
+        $('#weather-card').html;
+      }
+    });
+  });
+</script>
+
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p>Bootstrap Theme Made By <a href="https://www.w3schools.com" title="Visit w3schools">www.w3schools.com</a></p>
+</footer>
+
 </body>
 </html>
-
-  
